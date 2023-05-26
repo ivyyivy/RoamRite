@@ -2,7 +2,7 @@
 
 ## Background
 
-This is the landing page for RoamRite, a web application that aims to simplify trip planning for people with mobility challenges. With RoamRite, users can discover their dream destinations and plan their perfect trips, taking into account their special needs and preferences.
+RoamRite, a web application that aims to simplify trip planning for people with mobility challenges. With RoamRite, users can discover their dream destinations and plan their perfect trips, taking into account their special needs and preferences.
 
 ## Install
 
