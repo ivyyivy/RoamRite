@@ -1,4 +1,4 @@
-# RoamRite Landing
+# RoamRite
 
 ## Background
 
