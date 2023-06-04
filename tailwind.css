@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{ 
+    .section-btn{
+        @apply p-2 my-2 bg-gray-400 inline-block;
+    }
+    .primary-btn{
+        @apply p-4 my3;}
+}
