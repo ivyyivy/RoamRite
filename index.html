@@ -7,32 +7,55 @@
     <title>RoamRite Landing</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/bc7947c3f9.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="h-screen">
     <header class="bg-white box-border py-4">
-        <!-- Nav Bar left section: logo-->
+        
         <nav class="flex justify-between items-center px-4">
+            <!-- Nav Bar left section: logo-->
             <div class="flex">
                 <img src="logo.png" alt="RR-logo" class="w-6 h-6">
                 <span class="ml-2 text-gray-600 font-bold text-2xl">RoamRite</span>
             </div>
-            
 
-            <!-- Nav bar right section: Help and Log in -->
+            <!-- Nav bar middle section: search bar & help -->
             <div class="flex items-center space-x-2">
+
+                <form class="flex items-center">
+                    <input type="text" id="searchInput" placeholder="search..." class="px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"">
+                    <button type="submit"><i class="fas fa-magnifying-glass hover:bg-blue-600 focus:outline-none focus:bg-blue-600 ml-2"></i></button>
+                </form>
+                <div id="dropdown-content" class="top-full left-0 w-full bg-white border border-gray-300 hidden" >
+                    <!-- Content of the dropdown menu -->
+                </div>
+
+
+
+                <span class="text-gray-400">|</span>
+                <span class="text-gray-500"><a href="#">FAQ</span>
+                <span class="text-gray-400">|</span>
+
+                <!-- Dropdown log-in menu -->
+                <div class="p-2">
+                    <div id="register-login" class="dropdown inline-block relative">
                 
-                <input type="text" id="searchInput" placeholder="search..." class="px-2 py-1 border border-gray-300 rounded-md">
-                <button type="submit"><i class="fas fa-magnifying-glass"></i></button>
-                <span class="text-gray-400">|</span>
-                <span class="text-gray-500">FAQ</span>
-                <span class="text-gray-400">|</span>
-                <a href="#" class="login-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" id="user"><g transform="translate(0 -1004.362)"><circle cx="24" cy="1028.362" r="24" fill="#ffa40b" fill-rule="evenodd"></circle><g transform="translate(8 -9)"><path fill="#406b95" fill-rule="evenodd" d="M6 1048.346v-4.687c0-4.042 3.122-7.297 7-7.297h6c3.879 0 7 3.255 7 7.297v4.687z" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></path><ellipse style="isolation:auto;mix-blend-mode:normal" cx="15.981" cy="1029.802" fill="#406b95" fill-rule="evenodd" color="#000" overflow="visible" rx="4.98" ry="5"></ellipse><path fill="none" stroke="#0c5286" stroke-linejoin="round" d="M10 1043.824v4.538m12-4.538v4.538"></path></g></g></svg>
-                </a>
-            </div>
+                        <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                            <li>
+                                <a href="registration.html" class="block px-4 py-2 text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign up</a>
+                            </li>
+                            <li>
+                                <a href="log-in.html" class="block px-4 py-2 text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign in</a>
+                            </li>
+                        </ul>
+                </div>
+
+            
         </nav>
     </header>
+
+
 <!-- main section -->
     <main class="flex-col pb-14">
     <!-- Hero section -->
@@ -46,7 +69,7 @@
         </section>
 
     <!-- How to use this WebApp section -->
-        <section class="w-full h-full bg-cover mask mask-opacity-50 pb-8" style="background-image: url('webapp-background.jpg');" class="mask mask-opacity-50">
+        <section class="w-full h-full bg-cover mask mask-opacity-50 pb-8" style="background-image: url('webapp-background.jpg');">
             <div class="container px-12 p-8">
                 <h2 class="text-center text-2xl font-bold text-white mt-4 mb-12">Innovative Trip Planning for People with Mobility Challenges</h2>
                 <ul class="grid grid-cols-1 px-14 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -128,7 +151,7 @@
     </main>
 <!-- bottom section, quick links -->
 
-    <div class="flex justify-between text-center px-24 py-12 bg-slate-300">
+    <div class="flex justify-between text-center px-24 py-12 bg-slate-200">
         
         <div class="flex-col text-left">
             <p class=" font-bold">Check your previous trips</p>
@@ -169,7 +192,7 @@
     </div>   
 
 <!-- footer -->
-    <footer class="py-6 bg-slate-300">
+    <footer class="py-6 bg-slate-200">
         <p class="text-center mt-4">&copy; 2023 RoamRite. All rights reserved.</p>
 
         <ul class="flex justify-center mt-4 mb-8 pb-8">
@@ -196,6 +219,7 @@
             </li>
         </ul>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
