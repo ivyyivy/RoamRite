@@ -17,17 +17,17 @@ const confirmPassword = confirmPasswordEL.value;
 
 // Validate input
 if (!email || !password || !confirmPassword) {
-alertEL.innerText = 'Please fill in all fields.';
+alertEL.innerText = 'Please fill in all fields';
 return;
 }
 
 if (!emailRegex.test(email)) {
-alertEL.innerText = 'Please enter a valid email address.';
+alertEL.innerText = 'Please enter a valid email address';
 return;
 }
 
 if (password !== confirmPassword) {
-alertEL.innerText = 'Passwords do not match.';
+alertEL.innerText = 'Passwords do not match, please check';
 return;
 }
 
